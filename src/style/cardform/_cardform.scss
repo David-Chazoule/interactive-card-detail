@@ -1,0 +1,365 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  font-family: $font1;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+  }
+
+  .cards-container {
+    display: flex;
+    position: relative;
+    width: 62vh;
+    background-image: url("../../images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 960px) {
+      width: 100%;
+      height: 30vh;
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 24vh;
+    }
+
+    .all-cards {
+      display: flex;
+      position: absolute;
+      width: 60vh;
+      height: 70vh;
+      top: 10%;
+      left: 10%;
+
+      @media screen and (max-width: 1340px) {
+        left: 6%;
+      }
+      @media screen and (max-width: 1210px) {
+        left: 2%;
+      }
+      @media screen and (max-width: 1100px) {
+        left: -8%;
+      }
+      @media screen and (max-width: 1100px) {
+        left: -14%;
+      }
+
+      @media screen and (max-width: 960px) {
+        width: 60vh;
+        top: 54%;
+        left: 34%;
+        transform: translate(-50%, -50%);
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 48vh;
+      }
+
+      @media screen and (max-width: 380px) {
+        left: 28%;
+      }
+
+      .card-front-container {
+        img {
+          position: absolute;
+          width: 400px;
+          left: 24%;
+          top: 16%;
+
+          @media screen and (max-width: 960px) {
+            width: 320px;
+            left: 30%;
+            top: 50%;
+            z-index: 1;
+          }
+
+          @media screen and (max-width: 480px) {
+            width: 280px;
+          }
+
+          @media screen and (max-width: 380px) {
+            top: 51%;
+          }
+        }
+
+        .logo-card {
+          width: 60px;
+          position: absolute;
+          left: 30%;
+          top: 20%;
+
+          @media screen and (max-width: 960px) {
+            width: 46px;
+            left: 33%;
+            top: 55%;
+            z-index: 1;
+          }
+
+          @media screen and (max-width: 480px) {
+            width: 36px;
+            left: 34%;
+            top: 54%;
+          }
+        }
+
+        .card-info {
+          position: absolute;
+          width: 60%;
+          left: 30%;
+          top: 30%;
+
+          @media screen and (max-width: 960px) {
+            width: 50%;
+            left: 34%;
+            top: 62%;
+            z-index: 1;
+          }
+
+          @media screen and (max-width: 480px) {
+            width: 50%;
+            left: 35%;
+            top: 60%;
+          }
+          h2 {
+            color: white;
+            width: 100%;
+            font-size: 22px;
+            @media screen and (max-width: 960px) {
+              font-size: 18px;
+            }
+            @media screen and (max-width: 480px) {
+              font-size: 16px;
+            }
+          }
+
+          .bottom_card {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0;
+
+            p {
+              color: white;
+              font-size: 14px;
+              margin: 24px 0 2px 0;
+
+              @media screen and (max-width: 960px) {
+                font-size: 12px;
+                margin: 14px 0 2px 0;
+              }
+            }
+          }
+        }
+      }
+
+      .card-back-container {
+        img {
+          position: absolute;
+          width: 400px;
+          top: 60%;
+          left: 34%;
+
+          @media screen and (max-width: 960px) {
+            width: 320px;
+            top: 36%;
+            left: 38%;
+          }
+
+          @media screen and (max-width: 480px) {
+            width: 280px;
+            top: 39%;
+            left: 42%;
+          }
+        }
+        p {
+          position: absolute;
+          color: white;
+          top: 73%;
+          right: 2%;
+
+          @media screen and (max-width: 960px) {
+            font-size: 14px;
+            top: 46%;
+            right: 10%;
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: 12px;
+            top: 48%;
+            right: 2%;
+          }
+        }
+      }
+    }
+  }
+
+  .form_container {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-top: 30px;
+    }
+
+    form {
+      display: flex;
+      width: 46%;
+      flex-direction: column;
+
+      @media screen and (max-width: 960px) {
+        width: 60%;
+        margin-top: 14vh;
+      }
+
+      @media screen and (max-width: 550px) {
+        width: 80%;
+        margin-top: 8vh;
+      }
+
+      @media screen and (max-width: 550px) {
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 15px;
+
+        @media screen and (max-width: 480px) {
+          margin-top: 5px;
+        }
+
+        .message-error {
+          color: hsl(0, 100%, 66%);
+          font-size: 14px;
+          margin: 0;
+        }
+
+        input {
+          outline: none;
+          width: 100%;
+          height: 36px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+          margin-top: 6px;
+          border: 1px solid hsl(270deg, 3%, 87%);
+
+          @media screen and (max-width: 480px) {
+            margin-bottom: 6px;
+          }
+
+          &::placeholder {
+            color: hsl(270deg, 3%, 87%);
+            font-size: 14px;
+            padding-left: 6px;
+          }
+
+          &:focus {
+            border-color: hsl(278, 94%, 30%);
+            outline: none;
+          }
+        }
+      }
+
+      .date-container {
+        display: flex;
+
+        label {
+          width: 100%;
+
+          span {
+            display: flex;
+            width: 100%;
+            input {
+              width: 40%;
+              margin: 6px 6px 0 0;
+              margin-bottom: 10px;
+
+              &::placeholder {
+                color: hsl(270deg, 3%, 87%);
+                font-size: 18px;
+                padding-left: 6px;
+              }
+
+              &:focus {
+                border-color: blue;
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        margin-top: 5%;
+        color: white;
+        background-color: black;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $font1;
+
+        @media screen and (max-width: 480px) {
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+    .confirm-container {
+      @media screen and (max-width: 960px) {
+        width: 80%;
+        margin-top: 14vh;
+      }
+      img {
+        margin-bottom: 15px;
+      }
+
+      button {
+        width: 100%;
+        height: 60px;
+        border-radius: 10px;
+        margin: 1%;
+        color: white;
+        background-color: black;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $font1;
+
+        @media screen and (max-width: 960px) {
+          width: 60%;
+        }
+      }
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: 20px;
+      text-align: center;
+
+      @media screen and (max-width: 480px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .error-box {
+    width: 100%;
+    height: 8px;
+  }
+
+  .error {
+    border-color: hsl(0, 100%, 66%);
+  }
+}
