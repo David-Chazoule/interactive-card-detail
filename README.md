@@ -1,4 +1,14 @@
 
+
+<img src="" alt="Example Image" style="width:600px; height:auto;">
+
+
+<img src="" alt="Example Image" style="width:600px; height:auto;">
+
+
+
+
+
  # Interactive card detail form
   
  #About
