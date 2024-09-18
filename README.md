@@ -6,7 +6,7 @@
 
  This is my solution to the [interactive card details form Challenge]([https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)) on Frontend Mentor.
 
-[Online here](https://david-chazoule.github.io/Montgage-repayment-calculator-/](https://david-chazoule.github.io/interactive-card-detail/)
+[Online here](https://david-chazoule.github.io/interactive-card-detail/](https://david-chazoule.github.io/interactive-card-detail/))
 
 Thanks for checking out this front-end coding challenge.
 
